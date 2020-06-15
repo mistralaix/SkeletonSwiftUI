@@ -23,10 +23,8 @@ class WebService {
         static let AcceptHeader = "Accept"
         static let JsonContentType = "application/json"
          
-        static let AuthenticateWSURL = "/login" // OK
-        static let eventsURL = "/events" // OK
-        static let usersURL = "/users/%@" // OK
-        static let usernameURL = "/users/name?email=%@" // OK
+        static let AuthenticateURL = "/login"
+        static let notificationURL = "/notifications" // OK
     }
     
     // MARK: Init
@@ -41,6 +39,10 @@ class WebService {
         authenticatedSession = URLSession(configuration: defaultURLSessionConfiguration, delegate: nil, delegateQueue: .main)
         decoder.dateDecodingStrategy = .iso8601
         encoder.dateEncodingStrategy = .iso8601
+        
+        if let token = KeychainManager.shared.getToken() {
+            self.initAuthenticatedSession(with: "Bearer \(token)")
+        }
     }
     
     // MARK: Public Properties
@@ -58,37 +60,31 @@ class WebService {
     
     // MARK: Public Methods
     
-    private func saveLoginInfo(_ authent: AuthenticationDTO, _ authentMethod: eAuthentMethod, _ data: LoginDTO?) {
+    private func saveLoginInfo(_ authent: AuthenticationDTO, _ data: LoginDTO?) {
         if let tokenData = data {
-            KeychainManager.shared.saveAuthent(authent: authent, authentMethod: authentMethod)
+            KeychainManager.shared.saveCredentials(email: authent.email ?? "", password: authent.password, token: tokenData.token)
             self.initAuthenticatedSession(with: "Bearer \(tokenData.token)")
         } else {
             KeychainManager.shared.clearCredentials()
         }
     }
     
-    func authenticate(authent: AuthenticationDTO, authentMethod: eAuthentMethod, completion: @escaping (LoginDTO?, WebServiceResponse, ErrorResponseDTO?) -> Void) {
+    func authenticate(authent: AuthenticationDTO, completion: @escaping (LoginDTO?, WebServiceResponse, ErrorResponseDTO?) -> Void) {
         // swiftlint:disable:next force_try
-        let requestURL = String(format: Consts.AuthenticateWSURL)
+        let requestURL = String(format: Consts.AuthenticateURL)
         let body = try! encoder.encode(authent)
         
         postDataTask(requestURL, body: body, completion: { (data: LoginDTO?, webServiceResponse, err) in
-            self.saveLoginInfo(authent, authentMethod, data)
+            self.saveLoginInfo(authent, data)
             completion(data, webServiceResponse, nil)
         })
     }
     
-    func getEvents(completion: @escaping(EventList?, WebServiceResponse, ErrorResponseDTO?) -> Void) {
-        let requestURL = String(format: Consts.eventsURL)
+    func postTokenAPNS(token: NotificationTokenDTO, completion: @escaping(NoContentData?, WebServiceResponse, ErrorResponseDTO?) -> Void) {
+        let requestURL = String(format: Consts.notificationURL)
+        let body = try! encoder.encode(token)
 
-        getDataTask(requestURL, requiresAuthentication: true, completion: completion)
-    }
-    
-    
-    func getUsername(email: String, completion: @escaping(UsernameDTO?, WebServiceResponse, ErrorResponseDTO?) -> Void) {
-        let requestURL = String(format: Consts.usernameURL, email)
-
-        getDataTask(requestURL, requiresAuthentication: false, completion: completion)
+        postDataTask(requestURL, body: body, requiresAuthentication: true, completion: completion)
     }
     
     // MARK: Private Methods
@@ -184,9 +180,9 @@ class WebService {
                 }
                 
             } else if webServiceResponse.statusCode == 401 && requiresAuthentication && canRetryOnUnauthorized,
-                let (auth, authMethod) = KeychainManager.shared.getCredentials() {
+                let (email, password) = KeychainManager.shared.getCredentials() {
                 // Token has expired, refreshing
-                self.authenticate(authent: auth, authentMethod: authMethod, completion: { (_, authResponse, err) in
+                self.authenticate(authent: AuthenticationDTO(email: email, password: password), completion: { (_, authResponse, err) in
                     switch authResponse.statusCode {
                     case 200:
                         self.process(urlRequest: urlRequest, requiresAuthentication: requiresAuthentication, canRetryOnUnauthorized: false, completion: completion)

@@ -7,5 +7,8 @@ target 'SkeletonSwifUI' do
 
   # Pods for SkeletonSwifUI
   pod 'KeychainSwift'
+  pod 'IQKeyboardManagerSwift'
+  pod 'SDWebImage'
+  pod 'SwiftEntryKit', '1.2.3'
 
 end

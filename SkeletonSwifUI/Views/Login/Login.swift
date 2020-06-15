@@ -7,6 +7,7 @@
 //
 
 import SwiftUI
+import SwiftEntryKit
 
 struct Login: View {
     
@@ -18,31 +19,32 @@ struct Login: View {
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
-            Color.yellow
+            Color.greenDevid
                 .edgesIgnoringSafeArea(.all)
             ActivityIndicator(isAnimating: self.$_isLoading, style: .medium).padding()
             VStack(alignment: .center, spacing: 15) {
                 Spacer()
                 TextField("Email", text: self.$_email)
+                    .autocapitalization(.none)
+                    .keyboardType(.emailAddress)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
-                TextField("Password", text: self.$_password).textContentType(.password)
+                SecureField("Password", text: self.$_password).textContentType(.password)
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                 Button(action: {
-                    self.loginVM.login(auth: AuthenticationDTO(email: "cyril@test.com", password: "password"), authMethod: .email)
-//                    self._loginVM.login(auth: AuthenticationDTO(email: self._email, password: self._password), authMethod: .email)
+                    self.loginVM.login(email: self._email, password: self._password)
+//                    self.loginVM.login(auth: AuthenticationDTO(email: "cyril@test.com", password: "password"), authMethod: .email)
                 }) {
                     Text("Login")
                 }
                     Spacer()
                 .onReceive(self.loginVM.$isLoading) { (isLoading) in
-                    print("Loading --> \(isLoading)")
                     self._isLoading = isLoading
                 }
                 .onReceive(self.loginVM.$loginState) { (loginState) in
                     guard let state = loginState?.getContentIfNotHandled() else { return }
                     switch state {
                     case .loginError:
-                        print("------------> Login error")
+                        SwiftEntryKit.showErrorMessage(message: "Login Error")
                     case .loginSuccess:
                         print("------------> Login success")
                     }

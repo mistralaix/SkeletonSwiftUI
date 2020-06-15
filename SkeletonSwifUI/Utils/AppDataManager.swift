@@ -13,7 +13,6 @@ class AppDataManager {
     static let shared = AppDataManager()
     
     var user: UserDTO?
-    var allEvents = [EventDTO]()
     
     var finishFetchingCb: (() -> Void)?
     
@@ -30,12 +29,12 @@ class AppDataManager {
     private var nbFunctionCalled = 0
     
     func getMyProfile(completion: ((LoginDTO?) -> Void)?) {
-        guard let (auth, authMethod) = KeychainManager.shared.getCredentials() else {
+        guard let (email, password) = KeychainManager.shared.getCredentials() else {
             completion?(nil)
             return
         }
         nbFunctionCalled += 1
-        WebService.shared.authenticate(authent: auth, authentMethod: authMethod) { (object, response, error) in
+        WebService.shared.authenticate(authent: AuthenticationDTO(email: email, password: password)) { (object, response, error) in
             guard let obj = object else {
                 self.hasFetch = 1
                 completion?(nil)
@@ -47,26 +46,11 @@ class AppDataManager {
         }
     }
     
-    func getEvents(completion: (([EventDTO]?) -> Void)?) {
-        nbFunctionCalled += 1
-        WebService.shared.getEvents { (object, response, error) in
-            guard let obj = object else {
-                self.hasFetch = 1
-                completion?(nil)
-                return
-            }
-            self.allEvents = obj.eventList
-            self.hasFetch = 1
-            completion?(self.allEvents)
-        }
-    }
-    
     func getData(completion: ((UserDTO?) -> Void)?) {
         self.finishFetchingCb = {
             completion?(self.user)
         }
         self.getMyProfile(completion: nil)
-        self.getEvents(completion: nil)
     }
     
 }

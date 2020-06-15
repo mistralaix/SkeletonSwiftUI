@@ -26,6 +26,9 @@
 		F556EA4D2494324500DE1713 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F556EA4C2494324500DE1713 /* Event.swift */; };
 		F556EA502494A56300DE1713 /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F556EA4F2494A56300DE1713 /* ActivityIndicator.swift */; };
 		F56750C424959953003924C8 /* ViewInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F56750C324959953003924C8 /* ViewInjector.swift */; };
+		F5909D01249833BD0001B967 /* SwiftEntryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5909D00249833BD0001B967 /* SwiftEntryKit.swift */; };
+		F5909D03249839840001B967 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5909D02249839840001B967 /* String.swift */; };
+		F5909D05249839910001B967 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5909D04249839910001B967 /* Color.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		F556EA4C2494324500DE1713 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F556EA4F2494A56300DE1713 /* ActivityIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		F56750C324959953003924C8 /* ViewInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInjector.swift; sourceTree = "<group>"; };
+		F5909D00249833BD0001B967 /* SwiftEntryKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEntryKit.swift; sourceTree = "<group>"; };
+		F5909D02249839840001B967 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F5909D04249839910001B967 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,7 @@
 		F556EA372494131000DE1713 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				F5909CFF249833910001B967 /* Extension */,
 				F556EA4824941CC100DE1713 /* AppDataManager.swift */,
 				F556EA4A24941DE400DE1713 /* KeychainManager.swift */,
 				F556EA4C2494324500DE1713 /* Event.swift */,
@@ -204,6 +211,16 @@
 				F556EA23249412D100DE1713 /* SplashView.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		F5909CFF249833910001B967 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F5909D00249833BD0001B967 /* SwiftEntryKit.swift */,
+				F5909D02249839840001B967 /* String.swift */,
+				F5909D04249839910001B967 /* Color.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		FD31DA082A43CEA5E83C1925 /* Pods */ = {
@@ -335,6 +352,7 @@
 				F556EA472494187C00DE1713 /* UserVM.swift in Sources */,
 				F556EA3C249413D100DE1713 /* Login.swift in Sources */,
 				F556EA412494167600DE1713 /* WebService.swift in Sources */,
+				F5909D01249833BD0001B967 /* SwiftEntryKit.swift in Sources */,
 				F556EA502494A56300DE1713 /* ActivityIndicator.swift in Sources */,
 				F556EA4924941CC100DE1713 /* AppDataManager.swift in Sources */,
 				F556EA432494168C00DE1713 /* DTO.swift in Sources */,
@@ -343,8 +361,10 @@
 				F556EA24249412D100DE1713 /* SplashView.swift in Sources */,
 				F556EA3E2494155400DE1713 /* Home.swift in Sources */,
 				F556EA1F249412D100DE1713 /* SceneDelegate.swift in Sources */,
+				F5909D03249839840001B967 /* String.swift in Sources */,
 				F556EA452494185F00DE1713 /* LoginVM.swift in Sources */,
 				F556EA4D2494324500DE1713 /* Event.swift in Sources */,
+				F5909D05249839910001B967 /* Color.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -18,7 +18,7 @@ struct SplashView: View {
     
     var body: some View {
         ZStack(alignment: .topTrailing) {
-            Color.black
+            Color.primary
                 .edgesIgnoringSafeArea(.all)
             ActivityIndicator(isAnimating: $_isLoading, style: .medium).padding()
             if self._showLogin {

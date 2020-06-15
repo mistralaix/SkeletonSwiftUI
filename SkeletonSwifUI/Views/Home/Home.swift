@@ -15,15 +15,15 @@ struct Home: View {
     
     var body: some View {
         ZStack {
-            Color.blue
+            Color.red
                 .edgesIgnoringSafeArea(.all)
             VStack(alignment: .center, spacing: 20) {
                 Text("Home")
-                Text(self.userVM.user.username!)
+                Text(self.userVM.user.email!)
                 Button(action: {
                     self.loginVM.logout()
                 }) {
-                    Text("Logout").foregroundColor(Color.green)
+                    Text("Logout")
                 }
             }
         }

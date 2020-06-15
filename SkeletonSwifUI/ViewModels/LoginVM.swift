@@ -33,9 +33,9 @@ final class LoginVM: ObservableObject  {
         }
     }
     
-    func login(auth: AuthenticationDTO, authMethod: eAuthentMethod) {
+    func login(email: String, password: String) {
         self.isLoading = true
-        WebService.shared.authenticate(authent: auth, authentMethod: authMethod) { (object, response, err) in
+        WebService.shared.authenticate(authent: AuthenticationDTO(email: email, password: password)) { (object, response, err) in
             self.isLoading = false
             if let obj = object, response.isSuccess {
                 AppDataManager.shared.user = obj.user
