@@ -70,6 +70,7 @@
 		F5909D0B24983DAA0001B967 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
 		F5909D0C24983DB50001B967 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
 		F5909D0D249840420001B967 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		F5909D10249848F90001B967 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +96,7 @@
 		F556EA10249412D100DE1713 = {
 			isa = PBXGroup;
 			children = (
+				F5909D10249848F90001B967 /* README.md */,
 				F556EA1B249412D100DE1713 /* SkeletonSwiftUI */,
 				F556EA1A249412D100DE1713 /* Products */,
 				FD31DA082A43CEA5E83C1925 /* Pods */,
@@ -174,8 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				F5909CFF249833910001B967 /* Extension */,
-				F556EA4824941CC100DE1713 /* AppDataManager.swift */,
-				F556EA4A24941DE400DE1713 /* KeychainManager.swift */,
+				F5909D1124984D0C0001B967 /* Manager */,
 				F556EA4C2494324500DE1713 /* Event.swift */,
 			);
 			path = Utils;
@@ -244,6 +245,15 @@
 				F5909D0D249840420001B967 /* Config.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		F5909D1124984D0C0001B967 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				F556EA4A24941DE400DE1713 /* KeychainManager.swift */,
+				F556EA4824941CC100DE1713 /* AppDataManager.swift */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 		FD31DA082A43CEA5E83C1925 /* Pods */ = {

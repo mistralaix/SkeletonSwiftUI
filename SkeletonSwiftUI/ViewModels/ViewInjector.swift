@@ -38,3 +38,10 @@ extension ViewInjector {
     }
     
 }
+
+// MARK: For preview that needs a viewModel initialisation
+extension ViewInjector {
+    func makeHomePreview() -> some View {
+        return Home(userVM: UserVM(user: UserDTO(_id: "1234567890", email: "test@test.com")), loginVM: self._loginVM)
+    }
+}
