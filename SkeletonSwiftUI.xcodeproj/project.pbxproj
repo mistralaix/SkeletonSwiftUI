@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C72FB7CB45C433CAC86E7B8E /* Pods_SkeletonSwifUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B89CBD5CB2918E3F3379A16 /* Pods_SkeletonSwifUI.framework */; };
 		F556EA1D249412D100DE1713 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F556EA1C249412D100DE1713 /* AppDelegate.swift */; };
 		F556EA1F249412D100DE1713 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F556EA1E249412D100DE1713 /* SceneDelegate.swift */; };
 		F556EA22249412D100DE1713 /* SkeletonSwifUI.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F556EA20249412D100DE1713 /* SkeletonSwifUI.xcdatamodeld */; };
@@ -29,13 +28,23 @@
 		F5909D01249833BD0001B967 /* SwiftEntryKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5909D00249833BD0001B967 /* SwiftEntryKit.swift */; };
 		F5909D03249839840001B967 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5909D02249839840001B967 /* String.swift */; };
 		F5909D05249839910001B967 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5909D04249839910001B967 /* Color.swift */; };
+		F5909D0E249840420001B967 /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5909D0D249840420001B967 /* Config.swift */; };
+		FBE550F134C4C2474E2B67FD /* Pods_SkeletonSwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3EF17C4991A8F68D4D24627 /* Pods_SkeletonSwiftUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		056115AC1BF5FBB7E757C830 /* Pods-SkeletonSwiftUI.debug (prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonSwiftUI.debug (prod).xcconfig"; path = "Target Support Files/Pods-SkeletonSwiftUI/Pods-SkeletonSwiftUI.debug (prod).xcconfig"; sourceTree = "<group>"; };
 		0A9667B75530D1C204FEDD6D /* Pods-SkeletonSwifUI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonSwifUI.debug.xcconfig"; path = "Target Support Files/Pods-SkeletonSwifUI/Pods-SkeletonSwifUI.debug.xcconfig"; sourceTree = "<group>"; };
 		1D1A5D0B58708FD45E3A5D15 /* Pods-SkeletonSwifUI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonSwifUI.release.xcconfig"; path = "Target Support Files/Pods-SkeletonSwifUI/Pods-SkeletonSwifUI.release.xcconfig"; sourceTree = "<group>"; };
-		5B89CBD5CB2918E3F3379A16 /* Pods_SkeletonSwifUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkeletonSwifUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F556EA19249412D100DE1713 /* SkeletonSwifUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkeletonSwifUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3C94246ED11B4A3DA29867 /* Pods-SkeletonSwiftUI.release (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonSwiftUI.release (dev).xcconfig"; path = "Target Support Files/Pods-SkeletonSwiftUI/Pods-SkeletonSwiftUI.release (dev).xcconfig"; sourceTree = "<group>"; };
+		819BB790B0777BB63DB65E5C /* Pods-SkeletonSwifUI.release (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonSwifUI.release (dev).xcconfig"; path = "Target Support Files/Pods-SkeletonSwifUI/Pods-SkeletonSwifUI.release (dev).xcconfig"; sourceTree = "<group>"; };
+		9429DC198F40F180F7728472 /* Pods-SkeletonSwiftUI.debug (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonSwiftUI.debug (dev).xcconfig"; path = "Target Support Files/Pods-SkeletonSwiftUI/Pods-SkeletonSwiftUI.debug (dev).xcconfig"; sourceTree = "<group>"; };
+		A1FE8EC883F51BC8DB7124BB /* Pods-SkeletonSwifUI.debug (prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonSwifUI.debug (prod).xcconfig"; path = "Target Support Files/Pods-SkeletonSwifUI/Pods-SkeletonSwifUI.debug (prod).xcconfig"; sourceTree = "<group>"; };
+		C252536597D32C51BFE1653E /* Pods-SkeletonSwiftUI.release (prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonSwiftUI.release (prod).xcconfig"; path = "Target Support Files/Pods-SkeletonSwiftUI/Pods-SkeletonSwiftUI.release (prod).xcconfig"; sourceTree = "<group>"; };
+		D5858056B4362001DCE5ED2B /* Pods-SkeletonSwifUI.debug (dev).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonSwifUI.debug (dev).xcconfig"; path = "Target Support Files/Pods-SkeletonSwifUI/Pods-SkeletonSwifUI.debug (dev).xcconfig"; sourceTree = "<group>"; };
+		E5126726CF0AA59EADC3BCF2 /* Pods-SkeletonSwifUI.release (prod).xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SkeletonSwifUI.release (prod).xcconfig"; path = "Target Support Files/Pods-SkeletonSwifUI/Pods-SkeletonSwifUI.release (prod).xcconfig"; sourceTree = "<group>"; };
+		F3EF17C4991A8F68D4D24627 /* Pods_SkeletonSwiftUI.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SkeletonSwiftUI.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F556EA19249412D100DE1713 /* SkeletonSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SkeletonSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F556EA1C249412D100DE1713 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F556EA1E249412D100DE1713 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F556EA21249412D100DE1713 /* SkeletonSwifUI.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SkeletonSwifUI.xcdatamodel; sourceTree = "<group>"; };
@@ -58,6 +67,9 @@
 		F5909D00249833BD0001B967 /* SwiftEntryKit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftEntryKit.swift; sourceTree = "<group>"; };
 		F5909D02249839840001B967 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		F5909D04249839910001B967 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F5909D0B24983DAA0001B967 /* Dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Dev.xcconfig; sourceTree = "<group>"; };
+		F5909D0C24983DB50001B967 /* Prod.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Prod.xcconfig; sourceTree = "<group>"; };
+		F5909D0D249840420001B967 /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,7 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C72FB7CB45C433CAC86E7B8E /* Pods_SkeletonSwifUI.framework in Frameworks */,
+				FBE550F134C4C2474E2B67FD /* Pods_SkeletonSwiftUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,7 +87,7 @@
 		951EC97F467CD4CE74980072 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5B89CBD5CB2918E3F3379A16 /* Pods_SkeletonSwifUI.framework */,
+				F3EF17C4991A8F68D4D24627 /* Pods_SkeletonSwiftUI.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -83,7 +95,7 @@
 		F556EA10249412D100DE1713 = {
 			isa = PBXGroup;
 			children = (
-				F556EA1B249412D100DE1713 /* SkeletonSwifUI */,
+				F556EA1B249412D100DE1713 /* SkeletonSwiftUI */,
 				F556EA1A249412D100DE1713 /* Products */,
 				FD31DA082A43CEA5E83C1925 /* Pods */,
 				951EC97F467CD4CE74980072 /* Frameworks */,
@@ -93,15 +105,16 @@
 		F556EA1A249412D100DE1713 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F556EA19249412D100DE1713 /* SkeletonSwifUI.app */,
+				F556EA19249412D100DE1713 /* SkeletonSwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F556EA1B249412D100DE1713 /* SkeletonSwifUI */ = {
+		F556EA1B249412D100DE1713 /* SkeletonSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
 				F556EA382494132600DE1713 /* SupportingFiles */,
+				F5909D0A24983D8D0001B967 /* Config */,
 				F556EA372494131000DE1713 /* Utils */,
 				F556EA362494130500DE1713 /* Views */,
 				F556EA35249412FF00DE1713 /* ViewModels */,
@@ -109,7 +122,7 @@
 				F556EA33249412E100DE1713 /* Models */,
 				F556EA27249412D400DE1713 /* Preview Content */,
 			);
-			path = SkeletonSwifUI;
+			path = SkeletonSwiftUI;
 			sourceTree = "<group>";
 		};
 		F556EA27249412D400DE1713 /* Preview Content */ = {
@@ -223,11 +236,29 @@
 			path = Extension;
 			sourceTree = "<group>";
 		};
+		F5909D0A24983D8D0001B967 /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				F5909D0B24983DAA0001B967 /* Dev.xcconfig */,
+				F5909D0C24983DB50001B967 /* Prod.xcconfig */,
+				F5909D0D249840420001B967 /* Config.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		FD31DA082A43CEA5E83C1925 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				0A9667B75530D1C204FEDD6D /* Pods-SkeletonSwifUI.debug.xcconfig */,
 				1D1A5D0B58708FD45E3A5D15 /* Pods-SkeletonSwifUI.release.xcconfig */,
+				D5858056B4362001DCE5ED2B /* Pods-SkeletonSwifUI.debug (dev).xcconfig */,
+				A1FE8EC883F51BC8DB7124BB /* Pods-SkeletonSwifUI.debug (prod).xcconfig */,
+				819BB790B0777BB63DB65E5C /* Pods-SkeletonSwifUI.release (dev).xcconfig */,
+				E5126726CF0AA59EADC3BCF2 /* Pods-SkeletonSwifUI.release (prod).xcconfig */,
+				9429DC198F40F180F7728472 /* Pods-SkeletonSwiftUI.debug (dev).xcconfig */,
+				056115AC1BF5FBB7E757C830 /* Pods-SkeletonSwiftUI.debug (prod).xcconfig */,
+				7B3C94246ED11B4A3DA29867 /* Pods-SkeletonSwiftUI.release (dev).xcconfig */,
+				C252536597D32C51BFE1653E /* Pods-SkeletonSwiftUI.release (prod).xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -235,9 +266,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F556EA18249412D100DE1713 /* SkeletonSwifUI */ = {
+		F556EA18249412D100DE1713 /* SkeletonSwiftUI */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F556EA30249412D400DE1713 /* Build configuration list for PBXNativeTarget "SkeletonSwifUI" */;
+			buildConfigurationList = F556EA30249412D400DE1713 /* Build configuration list for PBXNativeTarget "SkeletonSwiftUI" */;
 			buildPhases = (
 				BD884FE74183322D2BC11FF1 /* [CP] Check Pods Manifest.lock */,
 				F556EA15249412D100DE1713 /* Sources */,
@@ -249,9 +280,9 @@
 			);
 			dependencies = (
 			);
-			name = SkeletonSwifUI;
+			name = SkeletonSwiftUI;
 			productName = SkeletonSwifUI;
-			productReference = F556EA19249412D100DE1713 /* SkeletonSwifUI.app */;
+			productReference = F556EA19249412D100DE1713 /* SkeletonSwiftUI.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -269,7 +300,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F556EA14249412D100DE1713 /* Build configuration list for PBXProject "SkeletonSwifUI" */;
+			buildConfigurationList = F556EA14249412D100DE1713 /* Build configuration list for PBXProject "SkeletonSwiftUI" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -282,7 +313,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F556EA18249412D100DE1713 /* SkeletonSwifUI */,
+				F556EA18249412D100DE1713 /* SkeletonSwiftUI */,
 			);
 		};
 /* End PBXProject section */
@@ -307,15 +338,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SkeletonSwifUI/Pods-SkeletonSwifUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SkeletonSwiftUI/Pods-SkeletonSwiftUI-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-SkeletonSwifUI/Pods-SkeletonSwifUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-SkeletonSwiftUI/Pods-SkeletonSwiftUI-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkeletonSwifUI/Pods-SkeletonSwifUI-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SkeletonSwiftUI/Pods-SkeletonSwiftUI-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		BD884FE74183322D2BC11FF1 /* [CP] Check Pods Manifest.lock */ = {
@@ -333,7 +364,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SkeletonSwifUI-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SkeletonSwiftUI-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -351,6 +382,7 @@
 				F556EA1D249412D100DE1713 /* AppDelegate.swift in Sources */,
 				F556EA472494187C00DE1713 /* UserVM.swift in Sources */,
 				F556EA3C249413D100DE1713 /* Login.swift in Sources */,
+				F5909D0E249840420001B967 /* Config.swift in Sources */,
 				F556EA412494167600DE1713 /* WebService.swift in Sources */,
 				F5909D01249833BD0001B967 /* SwiftEntryKit.swift in Sources */,
 				F556EA502494A56300DE1713 /* ActivityIndicator.swift in Sources */,
@@ -382,8 +414,9 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		F556EA2E249412D400DE1713 /* Debug */ = {
+		F556EA2E249412D400DE1713 /* Debug (dev) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5909D0B24983DAA0001B967 /* Dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -440,10 +473,11 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = "Debug (dev)";
 		};
-		F556EA2F249412D400DE1713 /* Release */ = {
+		F556EA2F249412D400DE1713 /* Release (dev) */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5909D0B24983DAA0001B967 /* Dev.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -494,70 +528,232 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = "Release (dev)";
 		};
-		F556EA31249412D400DE1713 /* Debug */ = {
+		F556EA31249412D400DE1713 /* Debug (dev) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0A9667B75530D1C204FEDD6D /* Pods-SkeletonSwifUI.debug.xcconfig */;
+			baseConfigurationReference = F5909D0B24983DAA0001B967 /* Dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SkeletonSwifUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SkeletonSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 4B8FX5T86P;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SkeletonSwifUI/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = SkeletonSwiftUI/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cc.SkeletonSwifUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.SkeletonSwiftUI;
+				PRODUCT_NAME = SkeletonSwiftUI;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = "Debug (dev)";
 		};
-		F556EA32249412D400DE1713 /* Release */ = {
+		F556EA32249412D400DE1713 /* Release (dev) */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1D1A5D0B58708FD45E3A5D15 /* Pods-SkeletonSwifUI.release.xcconfig */;
+			baseConfigurationReference = F5909D0B24983DAA0001B967 /* Dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"SkeletonSwifUI/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"SkeletonSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = 4B8FX5T86P;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = SkeletonSwifUI/SupportingFiles/Info.plist;
+				INFOPLIST_FILE = SkeletonSwiftUI/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = cc.SkeletonSwifUI;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = cc.SkeletonSwiftUI;
+				PRODUCT_NAME = SkeletonSwiftUI;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = "Release (dev)";
+		};
+		F5909D0624983CA90001B967 /* Debug (prod) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5909D0C24983DB50001B967 /* Prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = "Debug (prod)";
+		};
+		F5909D0724983CA90001B967 /* Debug (prod) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5909D0C24983DB50001B967 /* Prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SkeletonSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 4B8FX5T86P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SkeletonSwiftUI/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.SkeletonSwiftUI;
+				PRODUCT_NAME = SkeletonSwiftUI;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Debug (prod)";
+		};
+		F5909D0824983CBC0001B967 /* Release (prod) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5909D0C24983DB50001B967 /* Prod.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = "Release (prod)";
+		};
+		F5909D0924983CBC0001B967 /* Release (prod) */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F5909D0C24983DB50001B967 /* Prod.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"SkeletonSwiftUI/Preview Content\"";
+				DEVELOPMENT_TEAM = 4B8FX5T86P;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = SkeletonSwiftUI/SupportingFiles/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = cc.SkeletonSwiftUI;
+				PRODUCT_NAME = SkeletonSwiftUI;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = "Release (prod)";
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F556EA14249412D100DE1713 /* Build configuration list for PBXProject "SkeletonSwifUI" */ = {
+		F556EA14249412D100DE1713 /* Build configuration list for PBXProject "SkeletonSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F556EA2E249412D400DE1713 /* Debug */,
-				F556EA2F249412D400DE1713 /* Release */,
+				F556EA2E249412D400DE1713 /* Debug (dev) */,
+				F5909D0624983CA90001B967 /* Debug (prod) */,
+				F556EA2F249412D400DE1713 /* Release (dev) */,
+				F5909D0824983CBC0001B967 /* Release (prod) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release (dev)";
 		};
-		F556EA30249412D400DE1713 /* Build configuration list for PBXNativeTarget "SkeletonSwifUI" */ = {
+		F556EA30249412D400DE1713 /* Build configuration list for PBXNativeTarget "SkeletonSwiftUI" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				F556EA31249412D400DE1713 /* Debug */,
-				F556EA32249412D400DE1713 /* Release */,
+				F556EA31249412D400DE1713 /* Debug (dev) */,
+				F5909D0724983CA90001B967 /* Debug (prod) */,
+				F556EA32249412D400DE1713 /* Release (dev) */,
+				F5909D0924983CBC0001B967 /* Release (prod) */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = "Release (dev)";
 		};
 /* End XCConfigurationList section */
 

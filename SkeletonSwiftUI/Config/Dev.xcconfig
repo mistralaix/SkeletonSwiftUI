@@ -1,0 +1,18 @@
+//
+//  Dev.xcconfig
+//  SkeletonSwifUI
+//
+//  Created by cyril chaillan on 16/06/2020.
+//  Copyright © 2020 Devid. All rights reserved.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+#include "Pods/Target Support Files/Pods-SkeletonSwiftUI/Pods-SkeletonSwiftUI.debug (dev).xcconfig"
+#include "Pods/Target Support Files/Pods-SkeletonSwiftUI/Pods-SkeletonSwiftUI.release (dev).xcconfig"
+
+ROOT_URL = http:/$()/akius-back-preprod.us-west-1.elasticbeanstalk.com
+
+APP_NAME = SwiftUI Dev
+APP_BUNDLE_ID = cc.SkeletonSwiftUI.dev

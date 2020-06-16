@@ -24,7 +24,7 @@ class WebService {
         static let JsonContentType = "application/json"
          
         static let AuthenticateURL = "/login"
-        static let notificationURL = "/notifications" // OK
+        static let notificationURL = "/notifications"
     }
     
     // MARK: Init
@@ -115,7 +115,7 @@ class WebService {
     }
     
     private func dataTask<T: Decodable>(_ stringURL: String, body: Data?, httpMethod: String, requiresAuthentication: Bool, completion: @escaping (T?, WebServiceResponse, ErrorResponseDTO?) -> Void) {
-        var urlRequest = URLRequest(url: URL(string: "http://akius-back-preprod.us-west-1.elasticbeanstalk.com\(stringURL)")!)
+        var urlRequest = URLRequest(url: URL(string: "\(Config.ROOT_URL)\(stringURL)")!)
         
         urlRequest.httpMethod = httpMethod
         urlRequest.httpBody = body
@@ -125,7 +125,7 @@ class WebService {
     
     private func dataTask<T: Decodable>(file: FileWrapperDto, url: String, method: String, completion: @escaping (T?, WebServiceResponse, ErrorResponseDTO?) -> Void) {
 //        var request = URLRequest(url: url)
-        var request = URLRequest(url: URL(string: "http://akius-back-preprod.us-west-1.elasticbeanstalk.com\(url)")!)
+        var request = URLRequest(url: URL(string: "\(Config.ROOT_URL)\(url)")!)
         request.httpMethod = method
         
         let boundary = "Boundary-\(UUID().uuidString)"
